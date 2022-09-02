@@ -20,11 +20,11 @@ function App() {
         <div className="App">
           <Navigation />
           <Routes>
-            <Route path="/" element={<MainPage />}></Route>
-            <Route path="/detail/:id" element={<DetailPage />}></Route>
-            <Route path="/new" element={<NewPage />}></Route>
-            <Route path="/edit/:id" element={<EditPage />}></Route>
-            <Route path="/myList" element={<MyListPage />}></Route>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/detail/:id" element={<DetailPage />} />
+            <Route path="/new/:id" element={<NewPage />} />
+            <Route path="/edit/:id" element={<EditPage />} />
+            <Route path="/myList" element={<MyListPage />} />
           </Routes>
           <Footer />
         </div>

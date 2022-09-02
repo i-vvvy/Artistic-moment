@@ -20,6 +20,7 @@ export const Logo = styled.div`
   width: 100%;
   text-align: center;
   font-size: 3rem;
+  cursor: pointer;
 `;
 
 export const Right = styled.div`
@@ -32,5 +33,11 @@ export const Right = styled.div`
   button {
     margin-left: 2.2rem;
     font-size: 1.6rem;
+  }
+
+  button:hover {
+    text-decoration-color: #edd7af;
+    text-decoration-line: underline;
+    text-decoration-thickness: 6px;
   }
 `;

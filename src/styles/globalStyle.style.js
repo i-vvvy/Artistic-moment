@@ -44,6 +44,11 @@ const GlobalStyle = createGlobalStyle`
     background: none;
     cursor: pointer;
   }
+  input, textarea {
+    border: none;
+    background: none;
+    outline: none;
+  }
 `;
 
 export default GlobalStyle;

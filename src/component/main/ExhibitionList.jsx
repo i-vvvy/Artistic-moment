@@ -2,11 +2,12 @@ import React from 'react';
 import ExhibitionItem from './ExhibitionItem';
 import { Col, Row } from 'antd';
 import styled from 'styled-components';
-import { PageWrapper } from '../../styles/container.style';
 
-const ExhibitionListContainer = styled(PageWrapper)`
+const ExhibitionListContainer = styled.div`
   display: flex;
   justify-content: center;
+  width: 120rem;
+  margin: 0 auto;
 `;
 
 const ExhibitionList = () => {

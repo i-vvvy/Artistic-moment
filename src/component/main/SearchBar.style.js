@@ -3,7 +3,7 @@ import { PageWrapper } from '../../styles/container.style';
 
 export const Section = styled.div`
   /* background-color: pink; */
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 `;
 
 export const SearchBarContainer = styled(PageWrapper)`
@@ -12,7 +12,6 @@ export const SearchBarContainer = styled(PageWrapper)`
   padding: 2rem;
   border-bottom: 2px solid #777777;
   margin: auto;
-  /* background-color: #f9f9f9; */
   display: flex;
   align-items: center;
 

@@ -19,13 +19,14 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50rem;
 
   h2 {
     font-size: 3.4rem;
     margin-bottom: 3.4rem;
   }
   span {
-    width: 60rem;
+    width: 50rem;
     border-bottom: 2px solid #777777;
     margin-bottom: 6rem;
   }
@@ -39,13 +40,17 @@ export const Content = styled.div`
 
 export const Poster = styled.div`
   /* background-color: pink; */
-  width: 50%;
+  width: 60rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+
   img {
-    width: 34rem;
-    height: 38rem;
+    position: absolute;
+    width: 100%;
+    height: auto;
     background-color: #fff;
   }
 `;

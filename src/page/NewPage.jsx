@@ -1,7 +1,12 @@
 import React from 'react';
+import Editor from '../component/common/Editor';
 
 const NewPage = () => {
-  return <div>NewPage</div>;
+  return (
+    <div>
+      <Editor />
+    </div>
+  );
 };
 
 export default NewPage;
