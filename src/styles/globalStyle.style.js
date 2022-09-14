@@ -1,14 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@600;700&family=Josefin+Slab:wght@600;700&family=Noto+Sans+KR:wght@300;400;500&family=Ubuntu+Condensed&family=Yrsa:ital,wght@1,500;1,600&display=swap');
 
 *, *::before, *::after{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-family: 'Ubuntu Condensed', sans-serif;
   font-family: 'Cuprum', sans-serif;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-family: 'Yrsa', serif;
+  font-family: 'PT Serif', serif;
   font-weight: 400;
     box-sizing: inherit;
     margin: 0;

@@ -15,8 +15,8 @@ export const EditorContainer = styled.div`
 
 export const Title = styled.div`
   display: flex;
-  height: 42rem;
-  margin-bottom: 6rem;
+  height: 44rem;
+  margin-bottom: 8rem;
 `;
 
 export const Left = styled.div`
@@ -27,9 +27,15 @@ export const Left = styled.div`
   width: 50%;
   border-right: 1px solid #777777;
 
-  img {
+  .poster {
     width: 34rem;
-    height: 38rem;
+    height: 44rem;
+    background-color: pink;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
   }
 `;
 

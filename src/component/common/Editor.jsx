@@ -16,10 +16,12 @@ const Editor = () => {
         <h2>정세윤 : A Grand Day Out</h2>
         <Title>
           <Left>
-            <img
-              src="https://www.syu.ac.kr/wp-content/uploads/2021/04/%EC%A0%84%EC%8B%9C%ED%9A%8C-%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
-              alt=""
-            />
+            <div className="poster">
+              <img
+                src="https://www.syu.ac.kr/wp-content/uploads/2021/04/%EC%A0%84%EC%8B%9C%ED%9A%8C-%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+                alt=""
+              />
+            </div>
           </Left>
           <Right>
             <input type="text" placeholder="제목" />

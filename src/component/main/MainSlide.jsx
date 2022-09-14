@@ -1,24 +1,22 @@
 import React from 'react';
 import { Section, SlideContainer, Content, Poster } from './MainSlide.style';
 
-const MainSlide = () => {
+const MainSlide = ({ concert }) => {
+  console.log('mainslide', concert[7].FILE_URL_MI);
   return (
     <Section>
       <SlideContainer>
         <Content>
-          <h2>정세윤 : A Grand Day Out</h2>
-          <span></span>
+          <h2>{concert[2].TITLE}</h2>
+          <span />
           <p className="date">
-            2022.08.09 - <br />
-            2022.08.28
+            {concert[2].START_DATE} ~ <br />
+            {concert[2].END_DATE}
           </p>
-          <p>클램프갤러리</p>
+          <p>{concert[2].PLACE_NAME}</p>
         </Content>
         <Poster>
-          <img
-            src="https://www.syu.ac.kr/wp-content/uploads/2021/04/%EC%A0%84%EC%8B%9C%ED%9A%8C-%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
-            alt=""
-          />
+          <img src={concert[2].FILE_URL_MI} alt="" />
         </Poster>
       </SlideContainer>
     </Section>

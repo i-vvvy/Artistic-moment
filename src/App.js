@@ -1,17 +1,18 @@
 import './App.css';
 import 'antd/dist/antd.css';
+import React, { Suspense } from 'react';
 import GlobalStyle from './styles/globalStyle.style';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Navigation from './component/common/Navigation';
+
 import Footer from './component/common/Footer';
 import MainPage from './page/MainPage';
 import DetailPage from './page/DetailPage';
 import NewPage from './page/NewPage';
 import EditPage from './page/EditPage';
 import MyListPage from './page/MyListPage';
-
 function App() {
   return (
     <>

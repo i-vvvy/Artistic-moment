@@ -4,7 +4,7 @@ import { PageWrapper } from '../../styles/container.style';
 export const Section = styled.div`
   height: 44rem;
   border-bottom: 1px solid #777777;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 `;
 
 export const SlideContainer = styled(PageWrapper)`
@@ -41,6 +41,7 @@ export const Content = styled.div`
 export const Poster = styled.div`
   /* background-color: pink; */
   width: 60rem;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -49,8 +50,10 @@ export const Poster = styled.div`
 
   img {
     position: absolute;
-    width: 100%;
-    height: auto;
+    object-fit: cover;
+
+    /* width: 100%;
+    height: auto; */
     background-color: #fff;
   }
 `;

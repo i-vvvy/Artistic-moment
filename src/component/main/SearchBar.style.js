@@ -3,7 +3,7 @@ import { PageWrapper } from '../../styles/container.style';
 
 export const Section = styled.div`
   /* background-color: pink; */
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 `;
 
 export const SearchBarContainer = styled(PageWrapper)`
