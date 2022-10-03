@@ -13,6 +13,7 @@ import DetailPage from './page/DetailPage';
 import NewPage from './page/NewPage';
 import EditPage from './page/EditPage';
 import MyListPage from './page/MyListPage';
+
 function App() {
   return (
     <>

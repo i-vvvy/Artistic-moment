@@ -1,6 +1,8 @@
 import api from '../api';
+
 // const API_KEY = process.env.REACT_APP_API_KEY;
 const API_KEY = `61724c7344656d6d3839656170564a`;
+
 function getConcert() {
   return async dispatch => {
     try {

@@ -16,10 +16,10 @@ const ConcertList = ({ concert }) => {
 
   return (
     <ConcertListContainer>
-      <Row gutter={[90, 40]}>
-        {concertList.map((item, idx) => (
-          <Col span={8}>
-            <ConcertItem key={idx} item={item} />
+      <Row gutter={[90, 60]}>
+        {concertList.map((item, index) => (
+          <Col span={8} key={index}>
+            <ConcertItem item={item} />
           </Col>
         ))}
       </Row>

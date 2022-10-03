@@ -1,20 +1,18 @@
 import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ConcertItemContainer, Poster } from './ConcertItem.style';
 
-const ConcertItem = ({ item }) => {
-  const { id } = useParams();
+const ConcertItem = ({ item, isData }) => {
+  const id = item.PERFORM_CODE;
 
   const navigate = useNavigate();
 
-  const goNew = () => {
-    navigate(`/new/${id}`);
+  const goDetail = () => {
+    navigate(`/detail/${id}`);
   };
 
-  console.log('Concert?', item);
-
   return (
-    <ConcertItemContainer onClick={goNew}>
+    <ConcertItemContainer onClick={goDetail}>
       <Poster>
         <img src={item.FILE_URL_MI} alt="" />
       </Poster>

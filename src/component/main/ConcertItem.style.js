@@ -15,7 +15,7 @@ export const ConcertItemContainer = styled.div`
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 `;
 

@@ -2,81 +2,50 @@ import styled from 'styled-components';
 
 export const Section = styled.div``;
 
-export const EditorContainer = styled.div`
+export const RecordContainer = styled.div`
   width: 88rem;
   margin: 0 auto;
 
   h2 {
-    text-align: center;
-    font-size: 2.6rem;
-    margin: 6rem 0;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
   }
 `;
 
 export const Title = styled.div`
   display: flex;
-  height: 42rem;
-  margin-bottom: 6rem;
-`;
-
-export const Left = styled.div`
-  display: flex;
-  justify-content: end;
-  padding-right: 10rem;
-  align-items: center;
-  width: 50%;
-  border-right: 1px solid #777777;
-
-  img {
-    width: 34rem;
-    height: 38rem;
-  }
-`;
-
-export const Right = styled.div`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 10rem;
 
   h4 {
-    font-size: 3.2rem;
-    margin-bottom: 1.6rem;
-  }
-
-  p {
+    border-top: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    margin-bottom: 2.8rem;
+    width: 44rem;
     font-size: 1.8rem;
-    margin-bottom: 2rem;
-  }
-
-  .grade {
-    font-size: 2.4rem;
-    color: #999999;
-    margin-top: 0.8rem;
-  }
-
-  button {
-    margin-right: 0.8rem;
-    pointer-events: none;
+    padding: 0.8rem 1.4rem;
   }
 `;
 
 export const Content = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 
   p {
     font-size: 1.8rem;
     line-height: 4.6rem;
     margin-bottom: 4rem;
   }
+`;
+
+export const Button = styled.div`
+  display: flex;
+  margin-left: auto;
 
   button {
     border: 1px solid #777777;
     font-size: 1.6rem;
     padding: 0.6rem 1.4rem;
-    margin-left: auto;
+    margin-left: 1rem;
   }
 `;

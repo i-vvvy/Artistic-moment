@@ -31,7 +31,7 @@ export const Content = styled.div`
     margin-bottom: 6rem;
   }
   p {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
   .date {
     margin-bottom: 3rem;

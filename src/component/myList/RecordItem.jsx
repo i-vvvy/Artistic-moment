@@ -6,48 +6,50 @@ import {
   Content,
   Button,
 } from './RecordItem.style';
-import { HeartFilled } from '@ant-design/icons/lib/icons';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { recordListAction } from '../../redux/actions/recordListAction';
 
-const RecordItem = () => {
+const RecordItem = ({ concertInfo, title, date, id }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const goDetail = () => {
+    navigate(`/detail/${id}`);
+  };
+
+  const handleDelete = () => {
+    if (window.confirm('정말 삭제하시겠습니까?')) {
+      dispatch(recordListAction.deleteRecordList(id));
+    }
+  };
+
+  const goEdit = () => {
+    navigate(`/edit/${id}`);
+  };
+
   return (
-    <Section>
-      <RecordItemContainer>
-        <Poster>
-          <img
-            src="https://www.syu.ac.kr/wp-content/uploads/2021/04/%EC%A0%84%EC%8B%9C%ED%9A%8C-%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
-            alt=""
-          />
-        </Poster>
-        <Content>
-          <h4>정세윤 : A Grand Day Out</h4>
-          <h2>선물같은 순간</h2>
-          <div className="bottom">
-            <p>2022.09.14.</p>
-            <div className="grade">
-              <button>
-                <HeartFilled />
-              </button>
-              <button>
-                <HeartFilled />
-              </button>
-              <button>
-                <HeartFilled />
-              </button>
-              <button>
-                <HeartFilled />
-              </button>
-              <button>
-                <HeartFilled />
-              </button>
+    <div>
+      <Section>
+        <RecordItemContainer>
+          <Poster onClick={goDetail}>
+            <img src={concertInfo.FILE_URL_MI} alt="" />
+          </Poster>
+          <Content onClick={goDetail}>
+            <h4>{concertInfo.TITLE}</h4>
+            <h2>{title}</h2>
+            <div className="bottom">
+              <p>{date}</p>
+              <p>{concertInfo.PLACE_NAME}</p>
             </div>
-          </div>
-        </Content>
-        <Button>
-          <button>EDIT</button>
-          <button>DELETE</button>
-        </Button>
-      </RecordItemContainer>
-    </Section>
+          </Content>
+          <Button>
+            <button onClick={goEdit}>EDIT</button>
+            <button onClick={handleDelete}>DELETE</button>
+          </Button>
+        </RecordItemContainer>
+      </Section>
+    </div>
   );
 };
 
