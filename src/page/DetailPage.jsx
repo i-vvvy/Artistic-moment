@@ -9,10 +9,9 @@ import { useSelector } from 'react-redux';
 
 const DetailPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
 
+  const [record, setRecord] = useState('');
   const [concertInfo, setConcertInfo] = useState(null);
-  const [data, setData] = useState();
 
   const API_KEY = `61724c7344656d6d3839656170564a`;
   const getConcertInfo = async () => {
@@ -29,7 +28,7 @@ const DetailPage = () => {
   return (
     <div>
       <ConcertInfo concertInfo={concertInfo} />
-      <Record />
+      <Record record={record} setRecord={setRecord} />
     </div>
   );
 };

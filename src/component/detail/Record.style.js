@@ -4,7 +4,7 @@ export const Section = styled.div``;
 
 export const RecordContainer = styled.div`
   width: 88rem;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
 
   h2 {
     font-size: 2.4rem;

@@ -3,20 +3,19 @@ import styled from 'styled-components';
 import { PageWrapper } from '../../styles/container.style';
 
 const Section = styled.div`
-  height: 10rem;
-  margin-top: 8rem;
   border-top: 1px solid #777777;
+  /* margin-top: 10rem; */
   /* background-color: pink; */
 `;
 
 const FooterContainer = styled(PageWrapper)`
-  height: 10rem;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1px solid #777777;
   font-size: 1.2rem;
+  line-height: 2.6rem;
 `;
 
 const Footer = () => {

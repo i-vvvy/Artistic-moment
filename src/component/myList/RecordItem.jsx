@@ -23,7 +23,6 @@ const RecordItem = ({ concertInfo, title, date, id }) => {
       dispatch(recordListAction.deleteRecordList(id));
     }
   };
-
   const goEdit = () => {
     navigate(`/edit/${id}`);
   };

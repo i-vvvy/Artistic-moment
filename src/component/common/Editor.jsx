@@ -19,7 +19,6 @@ const Editor = ({ concertInfo, isEdit, originData }) => {
 
   const titleInput = useRef();
   const contentInput = useRef();
-
   const handleSubmit = event => {
     event.preventDefault();
 

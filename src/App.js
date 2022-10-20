@@ -1,9 +1,10 @@
 import './App.css';
 import 'antd/dist/antd.css';
-import React, { Suspense } from 'react';
+import React from 'react';
 import GlobalStyle from './styles/globalStyle.style';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { AuthContextProvider } from './context/AuthContext';
 
 import Navigation from './component/common/Navigation';
 
@@ -13,6 +14,7 @@ import DetailPage from './page/DetailPage';
 import NewPage from './page/NewPage';
 import EditPage from './page/EditPage';
 import MyListPage from './page/MyListPage';
+import SearchPage from './page/SearchPage';
 
 function App() {
   return (
@@ -20,15 +22,18 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <div className="App">
-          <Navigation />
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/detail/:id" element={<DetailPage />} />
-            <Route path="/new/:id" element={<NewPage />} />
-            <Route path="/edit/:id" element={<EditPage />} />
-            <Route path="/myList" element={<MyListPage />} />
-          </Routes>
-          <Footer />
+          <AuthContextProvider>
+            <Navigation />
+            <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/detail/:id" element={<DetailPage />} />
+              <Route path="/new/:id" element={<NewPage />} />
+              <Route path="/edit/:id" element={<EditPage />} />
+              <Route path="/myList" element={<MyListPage />} />
+              <Route path="/search" element={<SearchPage />} />
+            </Routes>
+            <Footer />
+          </AuthContextProvider>
         </div>
       </BrowserRouter>
     </>

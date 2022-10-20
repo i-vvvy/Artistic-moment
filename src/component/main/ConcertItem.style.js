@@ -11,6 +11,7 @@ export const ConcertItemContainer = styled.div`
     word-break: keep-all;
     overflow-wrap: break-word;
     width: 100%;
+    height: 7rem;
     border-bottom: 1px solid #adadac;
   }
 

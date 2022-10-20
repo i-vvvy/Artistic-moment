@@ -21,6 +21,7 @@ function recordListReducer(state = initialState, action) {
       };
     case 'DELETE_RECORD_LIST':
       const newList = state.recordList.filter(it => it.id !== payload.id);
+
       return {
         ...state,
         recordList: newList,

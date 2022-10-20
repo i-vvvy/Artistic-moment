@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ConcertInfo from '../component/detail/ConcertInfo';
-import { useDispatch } from 'react-redux';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import api from '../redux/api';
 import Editor from '../component/common/Editor';
 import { useSelector } from 'react-redux';

@@ -2,13 +2,22 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ConcertItemContainer, Poster } from './ConcertItem.style';
 
+import { UserAuth } from '../../context/AuthContext';
+import LoginModals from '../common/LoginModals';
+
 const ConcertItem = ({ item, isData }) => {
   const id = item.PERFORM_CODE;
 
   const navigate = useNavigate();
 
+  const { user } = UserAuth();
+
   const goDetail = () => {
-    navigate(`/detail/${id}`);
+    if (user) {
+      navigate(`/detail/${id}`);
+    } else {
+      window.alert('로그인 후 이용해주세요 😊');
+    }
   };
 
   return (

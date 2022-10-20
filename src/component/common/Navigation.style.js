@@ -12,7 +12,6 @@ export const NavContainer = styled(PageWrapper)`
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  border-bottom: 1px solid #777777;
 `;
 
 export const Logo = styled.div`
@@ -27,12 +26,12 @@ export const Right = styled.div`
   display: flex;
   align-items: center;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   z-index: 10;
 
   button {
-    margin-left: 2.2rem;
-    font-size: 1.6rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
   }
 
   button:hover {
@@ -40,4 +39,10 @@ export const Right = styled.div`
     text-decoration-line: underline;
     text-decoration-thickness: 6px;
   }
+`;
+
+export const Bottom = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;

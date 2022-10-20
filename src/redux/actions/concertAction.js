@@ -7,8 +7,10 @@ function getConcert() {
   return async dispatch => {
     try {
       dispatch({ type: 'GET_CONCERT_REQUEST' });
+
       const concertApi = await api.get(
         `http://openAPI.seoul.go.kr:8088/${API_KEY}/json/SJWPerform/12/71`,
+        // `http://openAPI.seoul.go.kr:8088/${API_KEY}/json/SJWPerform/12/21`,
       );
 
       dispatch({

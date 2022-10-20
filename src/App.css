@@ -1,2 +1,5 @@
-/* point color */
-/* #edd7af */
+/* react-bootstrap modal position*/
+
+.modal-content {
+  margin-top: 30%;
+}

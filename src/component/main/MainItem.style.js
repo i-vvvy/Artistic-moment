@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { PageWrapper } from '../../styles/container.style';
 
 export const Section = styled.div`
   height: 44rem;
@@ -7,31 +6,34 @@ export const Section = styled.div`
   margin-bottom: 10rem;
 `;
 
-export const SlideContainer = styled(PageWrapper)`
+export const MainItemContainer = styled.div`
+  width: 100%;
   height: 44rem;
-  /* background-color: #ececec; */
   border-bottom: 1px solid #777777;
   display: flex;
-  justify-content: space-between;
+  margin: auto;
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50rem;
+  width: 42rem;
+  margin: 0 8%;
 
   h2 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     margin-bottom: 3.4rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
   span {
     width: 50rem;
     border-bottom: 2px solid #777777;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
   p {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
   .date {
     margin-bottom: 3rem;
@@ -39,21 +41,31 @@ export const Content = styled.div`
 `;
 
 export const Poster = styled.div`
-  /* background-color: pink; */
-  width: 60rem;
+  width: 150rem;
   height: 100%;
+  max-width: 150rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: relative;
   overflow: hidden;
 
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 44rem;
+    content: '';
+    background: linear-gradient(to right, #f9f9f9, 60%, transparent);
+    z-index: 2;
+  }
+
   img {
     position: absolute;
+    width: 100%;
+    min-width: 90rem;
+    max-width: 150rem;
     object-fit: cover;
-
-    /* width: 100%;
-    height: auto; */
     background-color: #fff;
   }
 `;
