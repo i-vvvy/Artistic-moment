@@ -1,6 +1,8 @@
 import React from 'react';
-import { Section, SearchBarContainer } from './SearchBar.style';
-import { SearchOutlined } from '@ant-design/icons';
+import styles from './SearchBar.module.css';
+
+// import { SearchOutlined } from '@ant-design/icons';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 const SearchBar = ({ search, setSearch }) => {
   // const onSearch = event => {
@@ -18,10 +20,11 @@ const SearchBar = ({ search, setSearch }) => {
   };
 
   return (
-    <Section>
-      <SearchBarContainer>
-        <div className="searchIcon">
-          <SearchOutlined style={{ fontSize: '2rem', color: '#999999' }} />
+    <div className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.searchIcon}>
+          <AiOutlineSearch size="26" color="#777777" />
+          {/* <SearchOutlined style={{ fontSize: '2rem', color: '#999999' }} /> */}
         </div>
         <input
           type="text"
@@ -30,9 +33,11 @@ const SearchBar = ({ search, setSearch }) => {
           value={search}
           onChange={onSearch}
         />
-      </SearchBarContainer>
-      <button onClick={onReset}>RESET</button>
-    </Section>
+      </div>
+      <button className={styles.resetButton} onClick={onReset}>
+        RESET
+      </button>
+    </div>
   );
 };
 

@@ -1,14 +1,10 @@
 import React from 'react';
 import ConcertItem from './ConcertItem';
-import { Col, Row } from 'antd';
-import styled from 'styled-components';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-const ConcertListContainer = styled.div`
-  display: flex;
-  justify-content: start;
-  width: 120rem;
-  margin: 0 auto 10rem;
-`;
+import styles from './SearchList.module.css';
 
 const SearchList = ({ concert, search }) => {
   const filteredList = concert.filter(item => {
@@ -23,15 +19,19 @@ const SearchList = ({ concert, search }) => {
   });
 
   return (
-    <ConcertListContainer>
-      <Row gutter={[90, 60]}>
-        {filteredList.map((item, index) => (
-          <Col span={8} key={index}>
-            <ConcertItem item={item} />
-          </Col>
-        ))}
-      </Row>
-    </ConcertListContainer>
+    <Container className={styles.container}>
+      {search ? (
+        <Row className={styles.row}>
+          {filteredList.map((item, index) => (
+            <Col xs={12} md={6} xl={4} className={styles.col} key={index}>
+              <ConcertItem item={item} />
+            </Col>
+          ))}
+        </Row>
+      ) : (
+        <div className={styles.noContent}>No content</div>
+      )}
+    </Container>
   );
 };
 

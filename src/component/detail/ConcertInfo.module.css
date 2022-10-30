@@ -1,0 +1,151 @@
+.container {
+  width: 88rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  /* background-color: pink; */
+}
+
+.left {
+  justify-content: end;
+  padding-right: 10rem;
+  align-items: center;
+  width: 50%;
+  border-right: 1px solid #777777;
+  /* background-color: pink; */
+}
+
+.poster {
+  width: 34rem;
+  height: 44rem;
+  /* background-color: pink; */
+  position: relative;
+  overflow: hidden;
+}
+
+.poster img {
+  width: 100%;
+  position: absolute;
+  /* top: -1rem; */
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10rem;
+  /* background-color: pink; */
+}
+
+.tag {
+  margin-bottom: 5rem;
+}
+
+.tag span {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+
+.right h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1.4rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.right h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: 1px solid #777777;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.4rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 70rem;
+  }
+
+  .left {
+    border-right: none;
+    /* background-color: pink; */
+  }
+
+  .right {
+    padding-left: 6rem;
+    /* background-color: pink; */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 60rem;
+  }
+
+  .poster {
+    width: 26rem;
+    height: 34rem;
+    /* background-color: pink; */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .left {
+    border-right: none;
+    overflow: hidden;
+    /* background-color: pink; */
+  }
+
+  .right {
+    padding-left: 2rem;
+    /* background-color: pink; */
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 36rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .left {
+    justify-content: end;
+    padding-right: 0;
+    align-items: center;
+    width: 100%;
+    border-right: none;
+    background-color: pink;
+    margin-bottom: 4rem;
+  }
+
+  .poster {
+    width: 36rem;
+    height: 44rem;
+  }
+
+  .poster img {
+    top: -1.6rem;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    /* background-color: pink; */
+  }
+}

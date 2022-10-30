@@ -7,7 +7,9 @@ const MainItem = ({ item }) => {
       <MainItemContainer>
         <Content>
           <h2>{item.TITLE}</h2>
-          <span />
+          <span className="line">
+            <span className="active" />
+          </span>
           <p className="date">
             {item.START_DATE} ~ <br />
             {item.END_DATE}

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Section, VideoContainer, Content, VideoContent } from './Video.style';
 import YouTube from 'react-youtube';
+import styles from './Video.module.css';
 
 const Video = () => {
   return (
-    <Section>
-      <VideoContainer>
-        <Content>
+    <div className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.content}>
           <h2>
             SEJONG SEASON 2022
             <br />
@@ -19,26 +19,27 @@ const Video = () => {
             <br />
             2022 세종시즌과 함께 하세요
           </p>
-        </Content>
-        <VideoContent>
+        </div>
+        <div className={styles.videoContent}>
           <YouTube
+            className={styles.youTube}
             videoId="ZtjCYXTrZik"
             opts={{
-              width: '660',
-              height: '371',
-              playerVars: {
-                autoplay: 1,
-                rel: 0,
-                modestbranding: 1,
-              },
+              width: '100%',
+              height: '100%',
+              // playerVars: {
+              //   autoplay: 1,
+              //   rel: 0,
+              //   modestbranding: 1,
+              // },
             }}
             onEnd={e => {
               e.target.stopVideo(0);
             }}
           />
-        </VideoContent>
-      </VideoContainer>
-    </Section>
+        </div>
+      </div>
+    </div>
   );
 };
 

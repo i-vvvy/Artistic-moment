@@ -1,0 +1,34 @@
+.menu {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 0 4rem;
+}
+
+.closeButton {
+  height: 8.4rem;
+  text-align: end;
+  /* background-color: pink; */
+}
+
+.closeButton button {
+  margin-top: 2.7rem;
+}
+
+.handleButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.handleButton button {
+  margin: 1rem 0;
+}
+
+.handleButton button:hover {
+  text-decoration-color: #edd7af;
+  text-decoration-line: underline;
+  text-decoration-thickness: 6px;
+}

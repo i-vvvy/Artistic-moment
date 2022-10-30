@@ -1,21 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import {
-  Section,
-  RecordContainer,
-  Title,
-  Content,
-  Button,
-} from './Record.style';
 import { useDispatch } from 'react-redux';
 import { recordListAction } from '../../redux/actions/recordListAction';
 import { useSelector } from 'react-redux';
+import styles from './Record.module.css';
 
 const Record = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const [data, setData] = useState();
 
   const goEdit = () => {
@@ -45,22 +38,22 @@ const Record = () => {
   };
 
   return (
-    <Section>
-      <RecordContainer>
+    <div className={styles.section}>
+      <div className={styles.container}>
         <h2>My Artistic Moment</h2>
-        <Title>
+        <div className={styles.title}>
           <h4>{data?.title}</h4>
           <h4>{data?.date}</h4>
-        </Title>
-        <Content>
+        </div>
+        <div className={styles.content}>
           <p>{data?.content}</p>
-          <Button>
+          <div className={styles.handleButton}>
             <button onClick={goEdit}>EDIT</button>
             <button onClick={handleDelete}>DELETE</button>
-          </Button>
-        </Content>
-      </RecordContainer>
-    </Section>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,25 @@
+.carousel button {
+  border-radius: 0;
+}
+
+.react-multiple-carousel__arrow {
+  margin-top: -10%;
+  margin-right: -4%;
+  margin-left: -4%;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media (max-width: 767px) {
+  .carousel button {
+    border-radius: 0;
+    min-height: 38px;
+    min-width: 38px;
+  }
+}

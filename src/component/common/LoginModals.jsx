@@ -1,17 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { GoogleSquareFilled } from '@ant-design/icons';
+import styles from './LoginModals.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  Section,
-  Title,
-  Form,
-  SubmitButton,
-  SnsLogin,
-} from './LoginModals.style';
-
 import { UserAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
+import { AiFillGoogleSquare } from 'react-icons/ai';
 
 const LoginModals = () => {
   const [show, setShow] = useState(false);
@@ -64,15 +58,20 @@ const LoginModals = () => {
   };
 
   return (
-    <Section>
-      <button onClick={handleShow}>LOGIN</button>
+    <div>
+      <div className={styles.desktopLoginButton} onClick={handleShow}>
+        LOGIN
+      </div>
+      <div className={styles.tabletLoginButton} onClick={handleShow}>
+        <FaUser size="22" color="#777777" />
+      </div>
 
       <Modal show={show} onHide={handleClose}>
-        <Title>
+        <div className={styles.title}>
           <h4>Artistic Moment</h4>
           <h2>Login</h2>
-        </Title>
-        <Form>
+        </div>
+        <div className={styles.form}>
           <input
             type="text"
             placeholder="E-MAIL"
@@ -91,20 +90,22 @@ const LoginModals = () => {
               setLoginPassword(e.target.value);
             }}
           />
-        </Form>
-        <SubmitButton onClick={handleLogin}>LOGIN</SubmitButton>
+        </div>
+        <div className={styles.submitButton} onClick={handleLogin}>
+          LOGIN
+        </div>
 
-        <SnsLogin>
+        <div className={styles.snsLogin}>
           <h2>SNS Login</h2>
           <div className="icon">
             <button onClick={handleGoogleSignIn}>
-              <GoogleSquareFilled />
+              <AiFillGoogleSquare size="26" color="#333333" />
               <p>GOOGLE LOGIN</p>
             </button>
           </div>
-        </SnsLogin>
+        </div>
       </Modal>
-    </Section>
+    </div>
   );
 };
 

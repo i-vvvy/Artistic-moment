@@ -1,0 +1,36 @@
+.section {
+  width: 100%;
+  border-top: 1px solid #777777;
+}
+
+.container {
+  margin: auto;
+  padding: 3rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.container p {
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    margin: 0 6%;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 0 6%;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}

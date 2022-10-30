@@ -1,0 +1,207 @@
+.section {
+  width: 100rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.container {
+  width: 88rem;
+  min-height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.poster {
+  min-width: 20rem;
+  min-height: 24rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.poster img {
+  width: 100%;
+  position: absolute;
+  top: -1rem;
+}
+
+.contentContainer {
+  display: flex;
+  /* background-color: #fff; */
+}
+
+.content {
+  width: 40rem;
+  margin-right: 12rem;
+  cursor: pointer;
+}
+
+.content h4 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 0 0.2rem 1rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #999999;
+}
+
+.content h2 {
+  font-size: 2.2rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #999999;
+}
+
+.content p {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.content .grade {
+  font-size: 1.6rem;
+  color: #999999;
+  margin-top: 0.8rem;
+}
+
+.content button {
+  margin-right: 0.4rem;
+  pointer-events: none;
+}
+
+.handleButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.handleButton button {
+  border: 1px solid #777777;
+  font-size: 1.4rem;
+  padding: 0.4rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.handleButton button:nth-child(2) {
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    width: 74rem;
+  }
+
+  .container {
+    width: 70rem;
+    margin: auto;
+    padding-left: 2rem;
+  }
+
+  .poster {
+    width: 18rem;
+    height: 22rem;
+    margin-right: 6rem;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 40rem;
+    margin-right: 4rem;
+  }
+
+  .handleButton {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .handleButton button {
+    margin-bottom: 0rem;
+    margin-right: 1rem;
+  }
+}
+
+/* @media (max-width: 767px) {
+  .section {
+    width: 64rem;
+  }
+
+  .container {
+    width: 60rem;
+  }
+
+  .poster {
+    min-width: 18rem;
+    min-height: 22rem;
+    margin-right: 4rem;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .handleButton {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .handleButton button {
+    margin-bottom: 0rem;
+    margin-right: 1rem;
+  }
+} */
+
+@media (max-width: 767px) {
+  .section {
+    width: 94%;
+    margin-bottom: 4rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 8%;
+    flex-direction: column;
+    /* background-color: pink; */
+  }
+
+  .poster {
+    min-width: 22rem;
+    min-height: 26rem;
+    margin-bottom: 4rem;
+    /* background-color: pink; */
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .handleButton {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .handleButton button {
+    padding: 0.6rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+    margin-right: 1rem;
+  }
+}

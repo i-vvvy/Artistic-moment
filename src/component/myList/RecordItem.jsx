@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Section,
-  RecordItemContainer,
-  Poster,
-  Content,
-  Button,
-} from './RecordItem.style';
+import styles from './RecordItem.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { recordListAction } from '../../redux/actions/recordListAction';
@@ -28,26 +22,26 @@ const RecordItem = ({ concertInfo, title, date, id }) => {
   };
 
   return (
-    <div>
-      <Section>
-        <RecordItemContainer>
-          <Poster onClick={goDetail}>
-            <img src={concertInfo.FILE_URL_MI} alt="" />
-          </Poster>
-          <Content onClick={goDetail}>
+    <div className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.poster} onClick={goDetail}>
+          <img src={concertInfo.FILE_URL_MI} alt="" />
+        </div>
+        <div className={styles.contentContainer}>
+          <div className={styles.content} onClick={goDetail}>
             <h4>{concertInfo.TITLE}</h4>
             <h2>{title}</h2>
-            <div className="bottom">
+            <div className={styles.bottom}>
               <p>{date}</p>
               <p>{concertInfo.PLACE_NAME}</p>
             </div>
-          </Content>
-          <Button>
+          </div>
+          <div className={styles.handleButton}>
             <button onClick={goEdit}>EDIT</button>
             <button onClick={handleDelete}>DELETE</button>
-          </Button>
-        </RecordItemContainer>
-      </Section>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

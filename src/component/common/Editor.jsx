@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Section, EditorContainer, Title, Content } from './Editor.style';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { recordListAction } from '../../redux/actions/recordListAction';
+import styles from './Editor.module.css';
 
 const getStringDate = date => {
   return date.toISOString().substring(0, 10);
@@ -19,6 +19,7 @@ const Editor = ({ concertInfo, isEdit, originData }) => {
 
   const titleInput = useRef();
   const contentInput = useRef();
+
   const handleSubmit = event => {
     event.preventDefault();
 
@@ -65,24 +66,27 @@ const Editor = ({ concertInfo, isEdit, originData }) => {
   }, [isEdit, originData]);
 
   return (
-    <Section>
-      <EditorContainer>
+    <div className={styles.section}>
+      <div className={styles.container}>
         <h2>{isEdit ? 'Edit' : 'Write Artistic Moment'}</h2>
-        <Title>
+        <div className={styles.title}>
           <input
+            className={styles.input}
             ref={titleInput}
             type="text"
             placeholder="제목"
+            maxLength="16"
             value={title}
             onChange={event => setTitle(event.target.value)}
           />
           <input
+            className={styles.input}
             type="date"
             value={date}
             onChange={event => setDate(event.target.value)}
           />
-        </Title>
-        <Content>
+        </div>
+        <div className={styles.content}>
           <textarea
             ref={contentInput}
             type="text"
@@ -91,9 +95,9 @@ const Editor = ({ concertInfo, isEdit, originData }) => {
             onChange={event => setContent(event.target.value)}
           />
           <button onClick={handleSubmit}>SUBMIT</button>
-        </Content>
-      </EditorContainer>
-    </Section>
+        </div>
+      </div>
+    </div>
   );
 };
 

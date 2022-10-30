@@ -1,23 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import {
-  Section,
-  ConcertInfoContainer,
-  Left,
-  Right,
-} from './ConcertInfo.style';
+import React from 'react';
+import styles from './ConcertInfo.module.css';
 
 const ConcertInfo = ({ concertInfo }) => {
   return (
-    <Section>
-      <ConcertInfoContainer>
-        <Left>
-          <div className="poster">
+    <section>
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <div className={styles.poster}>
             <img src={concertInfo?.FILE_URL_MI} alt="poster" />
           </div>
-        </Left>
-        <Right>
+        </div>
+        <div className={styles.right}>
           <h2>{concertInfo?.TITLE}</h2>
-          <div className="tag">
+          <div className={styles.tag}>
             <span>{concertInfo?.GENRE_NAME}</span>
             <span>{concertInfo?.AGE}</span>
           </div>
@@ -26,9 +21,9 @@ const ConcertInfo = ({ concertInfo }) => {
           </h4>
           <h4>장소 | {concertInfo?.PLACE_NAME}</h4>
           <h4>문의 | {concertInfo?.INQUIRY_PHONE}</h4>
-        </Right>
-      </ConcertInfoContainer>
-    </Section>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -1,5 +1,95 @@
+* {
+  font-family: 'Cuprum', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Yrsa', serif;
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  color: #333333;
+  margin-bottom: 0;
+  /* background-color: #f9f9f9; */
+}
+
+body {
+  box-sizing: border-box;
+  /* background-color: #f9f9f9; */
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+p {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+}
+
 /* react-bootstrap modal position*/
 
 .modal-content {
   margin-top: 30%;
+}
+
+.offcanvas.offcanvas-end {
+  max-width: 26rem;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.react-multiple-carousel__arrow {
+  border-radius: 0;
+  margin-top: -10%;
+  margin-right: -4%;
+  margin-left: -4%;
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .react-multiple-carousel__arrow {
+    margin-top: -14%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .react-multiple-carousel__arrow {
+    margin-top: -22%;
+  }
+}
+
+@media (max-width: 767px) {
+  .react-multiple-carousel__arrow {
+    margin-top: -50%;
+  }
 }

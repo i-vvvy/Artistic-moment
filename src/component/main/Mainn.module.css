@@ -1,0 +1,136 @@
+.section {
+  height: 46rem;
+  overflow: hidden;
+  border-bottom: 1px solid #777777;
+  margin-bottom: 10rem;
+}
+
+.container {
+  width: 100%;
+  height: 46rem;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container::before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(to right, #ffffff, 90%, transparent);
+  z-index: 2;
+  border-bottom: 1px solid #777777;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 26%;
+  height: 100%;
+  margin: 0 10%;
+  z-index: 5;
+}
+
+.content h2 {
+  font-size: 3.2rem;
+  line-height: 5rem;
+  margin-bottom: 3.4rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.content span {
+  width: 100%;
+  border-bottom: 2px solid #555555;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.content p {
+  font-size: 2.2rem;
+}
+
+.date {
+  margin-bottom: 3rem;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.poster img {
+  width: 100%;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    margin-bottom: 8rem;
+  }
+
+  .container::before {
+    background: linear-gradient(to right, #ffffff, 86%, transparent);
+  }
+
+  .content {
+    width: 40%;
+  }
+
+  .poster img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    height: 50rem;
+    margin-bottom: 6rem;
+  }
+
+  .container {
+    position: relative;
+    height: 50rem;
+  }
+
+  .container::before {
+    display: none;
+  }
+
+  .content {
+    margin: 0 12%;
+    width: 66%;
+  }
+
+  .content h2 {
+    margin-bottom: 4rem;
+    text-align: left;
+  }
+
+  .poster::before {
+    position: absolute;
+    background-color: #ede9e1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-bottom: 1px solid #777777;
+  }
+
+  .poster img {
+    margin-top: 1rem;
+  }
+}

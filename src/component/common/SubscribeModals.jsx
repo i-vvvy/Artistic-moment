@@ -1,13 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  Section,
-  Checkbox,
-  Title,
-  Form,
-  SubmitButton,
-} from './SubscribeModals.style';
+import styles from './SubscribeModals.module.css';
 
 const SubscribeModals = () => {
   const [show, setShow] = useState(false);
@@ -15,13 +9,18 @@ const SubscribeModals = () => {
   const handleShow = () => setShow(true);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  // const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState();
 
   const nameRef = useRef();
   const emailRef = useRef();
-  // const checkedRef = useRef();
 
-  const handleSubmit = () => {
+  const handleChecked = e => {
+    setChecked(e.target.checked ? 'agree' : 'disagree');
+  };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
     if (name.length < 1) {
       nameRef.current.focus();
       return;
@@ -31,23 +30,28 @@ const SubscribeModals = () => {
       emailRef.current.focus();
       return;
     }
-    if (window.alert('Thank you for subscribing 😊'));
+
+    if (checked !== 'agree') {
+      return;
+    }
+    if (window.alert(`${name}! Thank you for subscribing 😊`));
     else {
       setName('');
       setEmail('');
+      setChecked('');
       handleClose();
     }
   };
   return (
-    <Section>
+    <div className={styles.section}>
       <button onClick={handleShow}>Subscribe</button>
 
       <Modal show={show} onHide={handleClose}>
-        <Title>
+        <div className={styles.title}>
           <h4>Artistic Moment</h4>
           <h2>Subscribe to the newsletter</h2>
-        </Title>
-        <Form>
+        </div>
+        <div className={styles.form}>
           <input
             type="text"
             placeholder="NAME"
@@ -63,24 +67,31 @@ const SubscribeModals = () => {
             ref={emailRef}
             onChange={e => setEmail(e.target.value)}
           />
-        </Form>
+        </div>
 
-        <Checkbox>
+        <div className={styles.checkbox}>
           <div>
-            <input type="checkbox" id="PersonalInfo" />
-            <label id="PersonalInfo">
+            <input
+              type="checkbox"
+              id="PersonalInfo"
+              checked={checked === 'agree'}
+              onChange={handleChecked}
+            />
+            <label htmlFor="PersonalInfo">
               (필수) 개인정보 수집 및 이용약관에 동의합니다.
             </label>
           </div>
           <div>
             <input type="checkbox" id="ad" />
-            <label id="ad">(선택) 광고성 정보 수신에 동의합니다.</label>
+            <label htmlFor="ad">(선택) 광고성 정보 수신에 동의합니다.</label>
           </div>
-        </Checkbox>
+        </div>
 
-        <SubmitButton onClick={handleSubmit}>SUBMIT</SubmitButton>
+        <div className={styles.submitButton} onClick={handleSubmit}>
+          SUBMIT
+        </div>
       </Modal>
-    </Section>
+    </div>
   );
 };
 

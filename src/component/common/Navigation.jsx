@@ -1,10 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SearchBar from '../main/SearchBar';
-import { Section, NavContainer, Logo, Right, Bottom } from './Navigation.style';
 import LoginModals from './LoginModals';
 import { UserAuth } from '../../context/AuthContext';
+import styles from './Navigation.module.css';
+import { FaUserCheck } from 'react-icons/fa';
+import Menu from './Menu';
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -32,23 +32,48 @@ const Navigation = () => {
   };
 
   return (
-    <Section>
-      <NavContainer>
-        <Logo onClick={goMain}>Artistic Moment</Logo>
-        {user ? (
-          <Right>
-            <button onClick={goSearch}>SEARCH</button>
-            <button onClick={goMyList}>RECORD-LIST</button>
-            <button onClick={handleSignOut}>LOGOUT</button>
-          </Right>
-        ) : (
-          <Right>
-            <button onClick={goSearch}>SEARCH</button>
-            <LoginModals />
-          </Right>
-        )}
-      </NavContainer>
-    </Section>
+    <div className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.logo}>
+          <h2 onClick={goMain}>Artistic Moment</h2>
+        </div>
+        <div className={styles.desktopButton}>
+          {user ? (
+            <div className={styles.handleButton}>
+              <button onClick={goSearch}>SEARCH</button>
+              <button onClick={goMyList}>RECORD-LIST</button>
+              <button onClick={handleSignOut}>LOGOUT</button>
+            </div>
+          ) : (
+            <div className={styles.handleButton}>
+              <button onClick={goSearch}>SEARCH</button>
+              <button>
+                <LoginModals />
+              </button>
+            </div>
+          )}
+        </div>
+        <div className={styles.tabletButton}>
+          <button>
+            {user ? (
+              <FaUserCheck size="26" color="#777777" onClick={handleSignOut} />
+            ) : (
+              <LoginModals />
+            )}
+          </button>
+
+          <button className={styles.fabars}>
+            <Menu
+              goMyList={goMyList}
+              goSearch={goSearch}
+              user={user}
+              logOut={logOut}
+              handleSignOut={handleSignOut}
+            />
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -1,7 +1,6 @@
 import './App.css';
-import 'antd/dist/antd.css';
 import React from 'react';
-import GlobalStyle from './styles/globalStyle.style';
+// import GlobalStyle from './styles/globalStyle.style';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
@@ -19,7 +18,7 @@ import SearchPage from './page/SearchPage';
 function App() {
   return (
     <>
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
       <BrowserRouter>
         <div className="App">
           <AuthContextProvider>
