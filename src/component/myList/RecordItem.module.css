@@ -123,42 +123,6 @@
   }
 }
 
-/* @media (max-width: 767px) {
-  .section {
-    width: 64rem;
-  }
-
-  .container {
-    width: 60rem;
-  }
-
-  .poster {
-    min-width: 18rem;
-    min-height: 22rem;
-    margin-right: 4rem;
-  }
-
-  .contentContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content {
-    width: 100%;
-  }
-
-  .handleButton {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .handleButton button {
-    margin-bottom: 0rem;
-    margin-right: 1rem;
-  }
-} */
-
 @media (max-width: 767px) {
   .section {
     width: 94%;

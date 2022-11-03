@@ -36,11 +36,6 @@ const Menu = ({ user, logOut }) => {
         placement="end"
       >
         <div className={styles.menu}>
-          <div className={styles.closeButton}>
-            <button onClick={handleMenuClose}>
-              <CgClose size="30" color="#777777" />
-            </button>
-          </div>
           {user ? (
             <div className={styles.handleButton}>
               <button onClick={goSearch}>SEARCH</button>
