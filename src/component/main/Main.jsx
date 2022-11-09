@@ -1,9 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import styles from './Mainn.module.css';
-// import MainnItem from './MainnItem';
+import styles from './Main.module.css';
 
-const Mainn = ({ concert }) => {
+const Main = ({ concert }) => {
   const MainConcert = concert.slice(11, 16);
 
   return (
@@ -104,4 +103,4 @@ const Mainn = ({ concert }) => {
   );
 };
 
-export default Mainn;
+export default Main;

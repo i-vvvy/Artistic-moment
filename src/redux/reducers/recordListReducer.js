@@ -15,6 +15,7 @@ function recordListReducer(state = initialState, action) {
             date: payload.date,
             content: payload.content,
             id: payload.concertInfo.PERFORM_CODE,
+            uid: payload.uid,
           },
           ...state.recordList,
         ],
@@ -35,6 +36,7 @@ function recordListReducer(state = initialState, action) {
               date: payload.date,
               content: payload.content,
               id: payload.concertInfo.PERFORM_CODE,
+              uid: payload.uid,
             }
           : it,
       );
@@ -43,7 +45,7 @@ function recordListReducer(state = initialState, action) {
         recordList: editList,
       };
     default:
-      return { ...state };
+      return state;
   }
 }
 

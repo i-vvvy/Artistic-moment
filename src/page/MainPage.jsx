@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Loading from '../component/common/Loading';
 import Video from '../component/main/Video';
 import Subscribe from '../component/main/Subscribe';
-import Mainn from '../component/main/Mainn';
+import Main from '../component/main/Main';
 
 const MainPage = () => {
   const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const MainPage = () => {
   }
   return (
     <div>
-      <Mainn concert={concert} />
+      <Main concert={concert} />
       <ConcertList concert={concert} />
       <Video />
       <Subscribe />

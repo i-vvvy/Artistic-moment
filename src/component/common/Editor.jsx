@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { recordListAction } from '../../redux/actions/recordListAction';
 import styles from './Editor.module.css';
+import { UserAuth } from '../../context/AuthContext';
 
 const getStringDate = date => {
   return date.toISOString().substring(0, 10);
@@ -12,6 +13,8 @@ const Editor = ({ concertInfo, isEdit, originData }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { id } = useParams();
+  const { user } = UserAuth();
+  const uid = user.uid;
 
   const [title, setTitle] = useState('');
   const [date, setDate] = useState(getStringDate(new Date()));
@@ -40,7 +43,14 @@ const Editor = ({ concertInfo, isEdit, originData }) => {
     )
       if (!isEdit) {
         dispatch(
-          recordListAction.addRecordList(concertInfo, title, date, content, id),
+          recordListAction.addRecordList(
+            concertInfo,
+            title,
+            date,
+            content,
+            id,
+            uid,
+          ),
         );
       } else {
         dispatch(
@@ -50,6 +60,7 @@ const Editor = ({ concertInfo, isEdit, originData }) => {
             date,
             content,
             id,
+            uid,
           ),
         );
       }

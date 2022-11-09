@@ -17,7 +17,7 @@ function concertReducer(state = initialState, action) {
     case 'GET_CONCERT_FAILURE':
       return { ...state, loading: false };
     default:
-      return { ...state };
+      return state;
   }
 }
 

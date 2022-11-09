@@ -4,11 +4,17 @@ import { useDispatch } from 'react-redux';
 import { recordListAction } from '../../redux/actions/recordListAction';
 import { useSelector } from 'react-redux';
 import styles from './Record.module.css';
+import { UserAuth } from '../../context/AuthContext';
 
 const Record = () => {
   const { id } = useParams();
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const { user } = UserAuth();
+  const uid = user.uid;
+
   const [data, setData] = useState();
 
   const goEdit = () => {
@@ -16,10 +22,11 @@ const Record = () => {
   };
 
   const getRecordList = useSelector(state => state.recordList.recordList);
+  const userRecordList = getRecordList.filter(item => item.uid === uid);
 
   useEffect(() => {
-    if (getRecordList) {
-      const targetRecord = getRecordList.find(it => it.id === id);
+    if (userRecordList) {
+      const targetRecord = userRecordList.find(it => it.id === id);
 
       if (targetRecord) {
         setData(targetRecord);
@@ -28,7 +35,7 @@ const Record = () => {
       }
       console.log('targetRecord', targetRecord);
     }
-  }, [id, getRecordList]);
+  }, [id, userRecordList]);
 
   const handleDelete = () => {
     if (window.confirm('정말 삭제하시겠습니까?')) {
