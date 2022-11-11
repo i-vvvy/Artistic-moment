@@ -14,13 +14,30 @@
   text-align: center;
 }
 
+.container p b:hover {
+  cursor: pointer;
+}
+
+.logo {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
-    margin: 0 6%;
+    width: 58rem;
     font-size: 1.4rem;
     line-height: 2.6rem;
     word-break: keep-all;
     overflow-wrap: break-word;
+  }
+
+  .detailInfo {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 3rem;
   }
 }
 
@@ -32,5 +49,14 @@
     line-height: 2.2rem;
     word-break: keep-all;
     overflow-wrap: break-word;
+  }
+
+  .detailInfo {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
   }
 }

@@ -27,34 +27,6 @@ const RecordItem = ({ concertInfo, title, date, id, uid }) => {
   };
 
   return (
-    // <div>
-    //   {userUid === uid ? (
-    //     <div className={styles.section}>
-    //       <div className={styles.container}>
-    //         <div className={styles.poster} onClick={goDetail}>
-    //           <img src={concertInfo.FILE_URL_MI} alt="" />
-    //         </div>
-    //         <div className={styles.contentContainer}>
-    //           <div className={styles.content} onClick={goDetail}>
-    //             <h4>{concertInfo.TITLE}</h4>
-    //             <h2>{title}</h2>
-    //             <div className={styles.bottom}>
-    //               <p>{date}</p>
-    //               <p>{concertInfo.PLACE_NAME}</p>
-    //             </div>
-    //           </div>
-    //           <div className={styles.handleButton}>
-    //             <button onClick={goEdit}>EDIT</button>
-    //             <button onClick={handleDelete}>DELETE</button>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   ) : (
-    //     <div />
-    //   )}
-    // </div>
-
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.poster} onClick={goDetail}>

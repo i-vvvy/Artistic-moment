@@ -21,6 +21,7 @@ const Main = ({ concert }) => {
             </div>
 
             <div className={styles.poster}>
+              <div className={styles.poster_1} />
               <img
                 className="d-block w-100"
                 src={MainConcert[0].FILE_URL_MI}
@@ -44,6 +45,7 @@ const Main = ({ concert }) => {
             </div>
 
             <div className={styles.poster}>
+              <div className={styles.poster_2} />
               <img
                 className="d-block w-100"
                 src={MainConcert[1].FILE_URL_MI}
@@ -67,6 +69,7 @@ const Main = ({ concert }) => {
             </div>
 
             <div className={styles.poster}>
+              <div className={styles.poster_3} />
               <img
                 className="d-block w-100"
                 src={MainConcert[2].FILE_URL_MI}
@@ -90,9 +93,34 @@ const Main = ({ concert }) => {
             </div>
 
             <div className={styles.poster}>
+              <div className={styles.poster_4} />
               <img
                 className="d-block w-100"
                 src={MainConcert[3].FILE_URL_MI}
+                alt="First slide"
+              />
+            </div>
+          </div>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <div className={styles.container}>
+            <div className={styles.content}>
+              <h2>{MainConcert[4].TITLE}</h2>
+              <span />
+
+              <p className={styles.date}>
+                {MainConcert[4].START_DATE} ~ <br />
+                {MainConcert[4].END_DATE}
+              </p>
+              <p>{MainConcert[4].PLACE_NAME}</p>
+            </div>
+
+            <div className={styles.poster}>
+              <div className={styles.poster_5} />
+              <img
+                className="d-block w-100"
+                src={MainConcert[4].FILE_URL_MI}
                 alt="First slide"
               />
             </div>

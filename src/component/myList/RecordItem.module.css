@@ -133,14 +133,12 @@
     width: 100%;
     padding: 0 8%;
     flex-direction: column;
-    /* background-color: pink; */
   }
 
   .poster {
     min-width: 22rem;
     min-height: 26rem;
     margin-bottom: 4rem;
-    /* background-color: pink; */
   }
 
   .contentContainer {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import { UserAuth } from '../../context/AuthContext';
 import styles from './ConcertItem.module.css';
 
@@ -15,7 +14,9 @@ const ConcertItem = ({ item, isData }) => {
     if (user) {
       navigate(`/detail/${id}`);
     } else {
-      window.alert('로그인 후 이용해주세요 😊');
+      window.alert(
+        '로그인 후 이용해주세요 😊 (E-MAIL: test@gmail.com, PASSWORD: 123456)',
+      );
     }
   };
 

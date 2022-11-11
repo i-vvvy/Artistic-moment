@@ -120,9 +120,49 @@
     text-align: left;
   }
 
-  .poster::before {
+  .poster_1 {
     position: absolute;
     background-color: #ede9e1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-bottom: 1px solid #777777;
+  }
+
+  .poster_2 {
+    position: absolute;
+    background-color: #d6cdc1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-bottom: 1px solid #777777;
+  }
+
+  .poster_3 {
+    position: absolute;
+    background-color: #f7e9de;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-bottom: 1px solid #777777;
+  }
+
+  .poster_4 {
+    position: absolute;
+    background-color: #d6d1c1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-bottom: 1px solid #777777;
+  }
+
+  .poster_5 {
+    position: absolute;
+    background-color: #f7f4de;
     content: '';
     width: 100%;
     height: 100%;

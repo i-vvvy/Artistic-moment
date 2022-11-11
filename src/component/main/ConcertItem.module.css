@@ -32,8 +32,8 @@
   min-height: 40rem;
   position: relative;
   margin-bottom: 1.6rem;
-  background-color: #edd7af;
   overflow: hidden;
+  transition: all 0.2s ease-out;
 }
 
 .poster img {
@@ -62,7 +62,6 @@
     width: 100%;
     position: relative;
     margin-bottom: 1.6rem;
-    background-color: #edd7af;
     overflow: hidden;
   }
 }
@@ -70,8 +69,6 @@
 @media (max-width: 767px) {
   .container {
     width: 100%;
-    /* background-color: #f9f9f9; */
-    /* padding: 1rem; */
   }
 
   .container h4 {
@@ -82,7 +79,6 @@
     width: 100%;
     position: relative;
     margin-bottom: 1.6rem;
-    background-color: #edd7af;
     overflow: hidden;
   }
 }

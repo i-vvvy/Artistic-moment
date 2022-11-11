@@ -32,7 +32,6 @@
   align-items: center;
   text-align: left;
   font-size: 1.6rem;
-  /* background-color: pink; */
   padding-right: 5rem;
 }
 
@@ -42,10 +41,21 @@
   z-index: 10;
 }
 
-.handleButton button:hover {
-  text-decoration-color: #edd7af;
-  text-decoration-line: underline;
-  text-decoration-thickness: 6px;
+.handleButton button::after {
+  content: '';
+  height: 6px;
+  width: 0%;
+  background-color: #edd7af;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.handleButton button:hover::after {
+  content: '';
+  height: 6px;
+  width: 100%;
+  background-color: #edd7af;
+  display: block;
 }
 
 .tabletButton {

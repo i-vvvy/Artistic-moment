@@ -2,11 +2,11 @@
   width: 120rem;
   padding-left: 4rem;
   margin-bottom: 4rem;
-  /* background-color: pink; */
 }
 
 .noContent {
-  height: 27rem;
+  height: 30rem;
+  padding-top: 10rem;
   font-size: 1.6rem;
   color: #c6c6c6;
   text-align: center;
@@ -14,7 +14,8 @@
 
 @media (min-width: 1800px) and (max-width: 4000px) {
   .noContent {
-    height: 42rem;
+    height: 50rem;
+    padding-top: 20rem;
   }
 }
 
@@ -28,10 +29,10 @@
   .container {
     width: 100%;
     margin-top: -2rem;
-    padding-left: 1rem;
     padding: 0 10%;
   }
   .noContent {
     height: 16rem;
+    padding-top: 5rem;
   }
 }

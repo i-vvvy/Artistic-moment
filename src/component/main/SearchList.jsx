@@ -3,7 +3,6 @@ import ConcertItem from './ConcertItem';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import styles from './SearchList.module.css';
 
 const SearchList = ({ concert, search }) => {
@@ -29,7 +28,7 @@ const SearchList = ({ concert, search }) => {
           ))}
         </Row>
       ) : (
-        <div className={styles.noContent}>No content</div>
+        <div className={styles.noContent}>Search for "love" 🤍</div>
       )}
     </Container>
   );
