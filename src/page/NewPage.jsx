@@ -22,10 +22,6 @@ const NewPage = () => {
     getConcertInfo();
   }, []);
 
-  const getRecordList = useSelector(state => state.recordList.recordList);
-
-  console.log('list', getRecordList);
-
   return (
     <div>
       <ConcertInfo concertInfo={concertInfo} />

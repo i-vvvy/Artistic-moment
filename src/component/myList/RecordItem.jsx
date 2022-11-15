@@ -3,15 +3,10 @@ import styles from './RecordItem.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { recordListAction } from '../../redux/actions/recordListAction';
-import { UserAuth } from '../../context/AuthContext';
 
 const RecordItem = ({ concertInfo, title, date, id, uid }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { user } = UserAuth();
-  const userUid = user.uid;
-
-  console.log(userUid);
 
   const goDetail = () => {
     navigate(`/detail/${id}`);

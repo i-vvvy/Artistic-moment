@@ -2,7 +2,6 @@ import { useContext, createContext, useEffect, useState } from 'react';
 import {
   GoogleAuthProvider,
   signInWithPopup,
-  signInWithRedirect,
   signOut,
   onAuthStateChanged,
   signInWithEmailAndPassword,
@@ -20,7 +19,6 @@ export const AuthContextProvider = ({ children }) => {
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider);
-    // signInWithRedirect(auth, provider);
   };
 
   const logIn = async () => {
@@ -32,7 +30,7 @@ export const AuthContextProvider = ({ children }) => {
       );
       console.log(user);
     } catch (error) {
-      console.log(error.message);
+      // console.log(error.message);
     }
   };
 
@@ -43,8 +41,7 @@ export const AuthContextProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, currentUser => {
       setUser(currentUser);
-
-      console.log('User', currentUser);
+      // console.log('User', currentUser);
     });
     return () => {
       unsubscribe();

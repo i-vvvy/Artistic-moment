@@ -26,12 +26,9 @@ const EditPage = () => {
     getConcertInfo();
   }, []);
 
-  console.log(recordList);
-
   useEffect(() => {
     if (recordList.length >= 1) {
       const targetRecord = recordList.find(it => it.id === id);
-      console.log('targetRecord', targetRecord);
 
       if (targetRecord) {
         setOriginData(targetRecord);

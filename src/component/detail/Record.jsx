@@ -28,7 +28,6 @@ const Record = () => {
       } else {
         navigate(`/new/${id}`, { replace: true });
       }
-      console.log('targetRecord', targetRecord);
     }
   }, [id, getRecordList]);
 

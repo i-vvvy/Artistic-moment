@@ -10,8 +10,6 @@ const SearchPage = () => {
   const dispatch = useDispatch();
   const { concert, loading } = useSelector(state => state.concert);
 
-  console.log('home', concert);
-
   useEffect(() => {
     dispatch(concertAction.getConcert());
   }, []);

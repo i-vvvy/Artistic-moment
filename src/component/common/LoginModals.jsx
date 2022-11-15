@@ -31,7 +31,7 @@ const LoginModals = () => {
       await googleSignIn();
       handleClose();
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 
