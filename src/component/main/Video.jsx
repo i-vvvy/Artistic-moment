@@ -27,11 +27,11 @@ const Video = () => {
             opts={{
               width: '100%',
               height: '100%',
-              // playerVars: {
-              //   autoplay: 1,
-              //   rel: 0,
-              //   modestbranding: 1,
-              // },
+              playerVars: {
+                autoplay: 1,
+                rel: 0,
+                modestbranding: 1,
+              },
             }}
             onEnd={e => {
               e.target.stopVideo(0);
