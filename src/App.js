@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-// import GlobalStyle from './styles/globalStyle.style';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
@@ -17,25 +16,22 @@ import SearchPage from './page/SearchPage';
 
 function App() {
   return (
-    <>
-      {/* <GlobalStyle /> */}
-      <BrowserRouter>
-        <div className="App">
-          <AuthContextProvider>
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="/detail/:id" element={<DetailPage />} />
-              <Route path="/new/:id" element={<NewPage />} />
-              <Route path="/edit/:id" element={<EditPage />} />
-              <Route path="/myList" element={<MyListPage />} />
-              <Route path="/search" element={<SearchPage />} />
-            </Routes>
-            <Footer />
-          </AuthContextProvider>
-        </div>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <div className="App">
+        <AuthContextProvider>
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/detail/:id" element={<DetailPage />} />
+            <Route path="/new/:id" element={<NewPage />} />
+            <Route path="/edit/:id" element={<EditPage />} />
+            <Route path="/myList" element={<MyListPage />} />
+            <Route path="/search" element={<SearchPage />} />
+          </Routes>
+          <Footer />
+        </AuthContextProvider>
+      </div>
+    </BrowserRouter>
   );
 }
 

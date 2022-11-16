@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Loading from '../component/common/Loading';
 import { concertAction } from '../redux/actions/concertAction';
 import SearchBar from '../component/main/SearchBar';
-import Test from '../component/main/Test';
 
 const SearchPage = () => {
   const dispatch = useDispatch();

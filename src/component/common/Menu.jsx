@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaBars } from 'react-icons/fa';
-import { CgClose } from 'react-icons/cg';
 import styles from './Menu.module.css';
 
 const Menu = ({ user, logOut }) => {

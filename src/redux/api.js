@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const api = axios.create({
-  // baseURL: 'http://api.kcisa.kr',
   // baseURL: 'http://openAPI.seoul.go.kr',
   headers: { 'Content-type': 'application/json' },
 });

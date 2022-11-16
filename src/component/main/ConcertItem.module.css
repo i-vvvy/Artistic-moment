@@ -34,6 +34,7 @@
   margin-bottom: 1.6rem;
   overflow: hidden;
   transition: all 0.2s ease-out;
+  background: #ffffff;
 }
 
 .poster img {
@@ -41,6 +42,7 @@
   width: 100%;
   height: auto;
   margin: auto;
+  background: #ffffff;
 }
 
 .poster:hover {

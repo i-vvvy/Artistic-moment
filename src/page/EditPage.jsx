@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ConcertInfo from '../component/detail/ConcertInfo';
-import { useDispatch } from 'react-redux';
-import { useParams, useNavigate, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import api from '../redux/api';
 import Editor from '../component/common/Editor';
 import { useSelector } from 'react-redux';
@@ -11,8 +10,8 @@ const EditPage = () => {
 
   const [concertInfo, setConcertInfo] = useState([]);
   const [originData, setOriginData] = useState();
-
   const API_KEY = `61724c7344656d6d3839656170564a`;
+
   const getConcertInfo = async () => {
     let url = `http://openapi.seoul.go.kr:8088/${API_KEY}/json/SJWPerform/1/1/${id}`;
     let response = await api.get(url);
