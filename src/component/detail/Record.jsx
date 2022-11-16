@@ -32,7 +32,7 @@ const Record = () => {
   }, [id, getRecordList]);
 
   const handleDelete = () => {
-    if (window.confirm('정말 삭제하시겠습니까?')) {
+    if (window.confirm('삭제하시겠습니까?')) {
       dispatch(recordListAction.deleteRecordList(id));
       navigate('/', { replace: true });
     }

@@ -59,8 +59,9 @@
 }
 
 .poster {
-  width: 100%;
+  width: 70%;
   height: 100%;
+  margin-left: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -85,6 +86,11 @@
 
   .content {
     width: 40%;
+  }
+
+  .poster {
+    width: 100%;
+    margin-left: 0;
   }
 
   .poster img {
@@ -118,6 +124,11 @@
   .content h2 {
     margin-bottom: 4rem;
     text-align: left;
+  }
+
+  .poster {
+    width: 100%;
+    margin-left: 0;
   }
 
   .poster_1 {

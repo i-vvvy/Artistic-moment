@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import styles from './Main.module.css';
 
 const Main = ({ concert }) => {
-  const MainConcert = concert.slice(11, 16);
+  const MainConcert = concert.slice(16, 22);
 
   return (
     <div className={styles.section}>
