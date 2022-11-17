@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+### 세종문화회관 공연 감상 기록 서비스 | 반응형 웹 사이트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Artistic Moment**
 
-## Available Scripts
+## **프로젝트 소개**
 
-In the project directory, you can run:
+**'예술적인 순간을 기록하다, Artistic Moment'**<br>
+세종문화회관의 공연 및 전시 정보 공공데이터 API를 활용하여, 간략한 공연 정보를 제공합니다. 관람한 공연을 검색하여 감상한 내용을 기록할 수 있습니다.
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **시연 영상**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[https://www.youtube.com/watch?v=k5V-sC0n1AE](https://www.youtube.com/watch?v=k5V-sC0n1AE)
 
-### `npm test`
+<br>
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **배포 주소**
 
-### `npm run build`
+### 🚨 **Notice** <br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+먼저 번거롭게 해드려 정말 죄송하다는 말씀드립니다.<br>
+배포 사이트 열람 시, 보안 설정 변경을 꼭 부탁드립니다.<br>
+**[ 크롬 - 사이트 설정 or 설정 - 개인정보 및 보안 - 안전하지 않은 콘텐츠 (차단 ➡️ 허용) ]** <br>
+번거로운 부탁에도 불구하고, 배포 사이트를 열람해주셔서 진심으로 감사드립니다. 🙏
+<br>
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[https://project-artistic-moment.web.app/](https://project-artistic-moment.web.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
+<br>
 
-### `npm run eject`
+## **기술 스택**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
+  <img src="https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=PostCSS&logoColor=white"> 
+   <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white">
+   <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white">
+   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=Firebase&logoColor=black">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+</p>
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **프로젝트 개발 기간**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2022.08.27 ~ 2022.11.17
