@@ -23,7 +23,7 @@ const ConcertItem = ({ item, isData }) => {
   return (
     <div className={styles.container} onClick={goDetail}>
       <div className={styles.poster}>
-        <img src={item.FILE_URL_MI} alt="" />
+        <img src={item.FILE_URL_MI} alt="공연 포스터" />
       </div>
       <h4>{item.TITLE}</h4>
       <span />

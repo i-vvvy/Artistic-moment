@@ -25,7 +25,7 @@ const Main = ({ concert }) => {
               <img
                 className="d-block w-100"
                 src={MainConcert[0].FILE_URL_MI}
-                alt="First slide"
+                alt="공연 포스터 1"
               />
             </div>
           </div>
@@ -49,7 +49,7 @@ const Main = ({ concert }) => {
               <img
                 className="d-block w-100"
                 src={MainConcert[1].FILE_URL_MI}
-                alt="First slide"
+                alt="공연 포스터 2"
               />
             </div>
           </div>
@@ -73,7 +73,7 @@ const Main = ({ concert }) => {
               <img
                 className="d-block w-100"
                 src={MainConcert[2].FILE_URL_MI}
-                alt="First slide"
+                alt="공연 포스터 3"
               />
             </div>
           </div>
@@ -97,7 +97,7 @@ const Main = ({ concert }) => {
               <img
                 className="d-block w-100"
                 src={MainConcert[3].FILE_URL_MI}
-                alt="First slide"
+                alt="공연 포스터 4"
               />
             </div>
           </div>
@@ -121,7 +121,7 @@ const Main = ({ concert }) => {
               <img
                 className="d-block w-100"
                 src={MainConcert[4].FILE_URL_MI}
-                alt="First slide"
+                alt="공연 포스터 5"
               />
             </div>
           </div>

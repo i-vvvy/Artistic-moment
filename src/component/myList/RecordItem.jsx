@@ -25,7 +25,7 @@ const RecordItem = ({ concertInfo, title, date, id, uid }) => {
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.poster} onClick={goDetail}>
-          <img src={concertInfo.FILE_URL_MI} alt="" />
+          <img src={concertInfo.FILE_URL_MI} alt="공연 포스터" />
         </div>
         <div className={styles.contentContainer}>
           <div className={styles.content} onClick={goDetail}>

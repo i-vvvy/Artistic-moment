@@ -7,7 +7,7 @@ const ConcertInfo = ({ concertInfo }) => {
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={styles.poster}>
-            <img src={concertInfo?.FILE_URL_MI} alt="poster" />
+            <img src={concertInfo?.FILE_URL_MI} alt="공연 포스터" />
           </div>
         </div>
         <div className={styles.right}>
