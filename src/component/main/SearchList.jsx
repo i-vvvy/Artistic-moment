@@ -28,7 +28,7 @@ const SearchList = ({ concert, search }) => {
           ))}
         </Row>
       ) : (
-        <div className={styles.noContent}>Search for "love" 🤍</div>
+        <div className={styles.noContent}>Search for "싱어송라이터"</div>
       )}
     </Container>
   );
