@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid #555555;
 }
 
 .resetButton {
@@ -28,7 +29,8 @@
 }
 
 .container input {
-  font-size: 1.8rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.6rem;
   width: 50rem;
   height: 4rem;
   border: none;

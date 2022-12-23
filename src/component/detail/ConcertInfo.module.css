@@ -55,8 +55,9 @@
 }
 
 .right h4 {
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.6rem;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
   margin-bottom: 1rem;
 }
 

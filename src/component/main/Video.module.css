@@ -1,9 +1,11 @@
 .section {
   display: flex;
   align-items: center;
-  background-color: #ede9e1;
-  height: 46rem;
+  height: 50rem;
   margin-bottom: 10rem;
+  background-color: #ede9e1;
+  border-top: 2px solid #555555;
+  border-bottom: 2px solid #555555;
 }
 
 .container {
@@ -22,14 +24,16 @@
 
 .content h2 {
   font-size: 3.8rem;
+  line-height: 5rem;
   border-bottom: 1px solid #333333;
   padding-bottom: 1.6rem;
   margin-bottom: 3rem;
 }
 
 .content p {
-  font-size: 1.8rem;
-  line-height: 3.6rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
 }
 
 .youTube {

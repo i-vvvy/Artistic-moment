@@ -1,6 +1,6 @@
 .section {
   width: 100%;
-  border-top: 1px solid #777777;
+  border-top: 2px solid #555555;
 }
 
 .container {
@@ -11,7 +11,11 @@
 }
 
 .container p {
+  font-family: 'Noto Sans KR', sans-serif;
   text-align: center;
+}
+.container p b {
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .container p b:hover {
@@ -19,8 +23,9 @@
 }
 
 .logo {
-  margin-top: 4rem;
-  font-size: 1.6rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 3rem;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {

@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.section}>
       <div className={styles.container}>
         <p>
-          아티스틱모먼트 | 주소: 구리시 경춘로100-0 아티스틱모먼트 | 대표자:
+          아티스틱모먼트 | 주소: 구리시 경춘로 100-0 아티스틱모먼트 | 대표자:
           이미미 | 사업자등록번호: 111-00-00000 | 대표전화: 1711-1004 | 이메일:
           am@artisticmoment.com
         </p>

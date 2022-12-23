@@ -6,12 +6,8 @@ import styles from './ConcertSlider.module.css';
 
 const PopularConcerSlider = ({ concert }) => {
   const responsive = {
-    superLargeDesktop: {
-      breakpoint: { min: 1800, max: 4000 },
-      items: 4,
-    },
     desktop: {
-      breakpoint: { min: 1200, max: 1799 },
+      breakpoint: { min: 1200, max: 4000 },
       items: 3,
     },
     tablet: {

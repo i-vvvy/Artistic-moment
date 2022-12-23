@@ -15,10 +15,12 @@ const ConcertList = ({ concert }) => {
 
   return (
     <div className={styles.container}>
-      <h2>{month}월의 공연</h2>
+      <p className={styles.txt}>마음을 따뜻하게 데워줄</p>
+      <h2 className={styles.tit}>{month}월의 공연</h2>
       <MonthlyConcertSlider concert={concert} />
       <div data-aos="fade-up">
-        <h2>인기 공연</h2>
+        <p className={styles.txt}>감성을 충만하게 채워줄</p>
+        <h2 className={styles.tit}>인기 공연</h2>
         <PopularConcerSlider concert={concert} />
       </div>
     </div>

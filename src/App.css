@@ -1,8 +1,8 @@
 * {
-  font-family: 'Cuprum', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
-  font-family: 'Yrsa', serif;
   font-family: 'PT Serif', serif;
+  font-family: 'Sunflower', sans-serif;
+
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -19,6 +19,7 @@ html {
 
 body {
   box-sizing: border-box;
+  letter-spacing: -0.02em;
   /* background-color: #f9f9f9; */
 }
 ul,
@@ -76,9 +77,9 @@ textarea {
   margin-left: -4%;
 }
 
-@media (min-width: 1200px) and (max-width: 1799px) {
+@media (min-width: 1200px) and (max-width: 4000px) {
   .react-multiple-carousel__arrow {
-    margin-top: -14%;
+    margin-top: -22%;
   }
 }
 

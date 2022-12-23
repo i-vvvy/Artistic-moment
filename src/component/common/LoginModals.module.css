@@ -22,6 +22,7 @@
 }
 
 .form input {
+  font-family: 'Noto Sans KR', sans-serif;
   border-bottom: 1px solid #999999;
   padding: 0.4rem;
   width: 30rem;

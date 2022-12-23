@@ -1,12 +1,12 @@
 .section {
   width: 100%;
-  height: 8.4rem;
-  border-bottom: 1px solid #777777;
+  height: 15vh;
+  border-bottom: 2px solid #555555;
 }
 
 .container {
   position: relative;
-  height: 8.4rem;
+  height: 15vh;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -31,13 +31,13 @@
   display: flex;
   align-items: center;
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-right: 5rem;
 }
 
 .handleButton button {
   margin-left: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   z-index: 10;
 }
 
@@ -65,12 +65,15 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .section {
     min-width: 100%;
-    height: 8.4rem;
-    border-bottom: 1px solid #777777;
+    height: 10vh;
+  }
+
+  .container {
+    height: 10vh;
   }
 
   .logo h2 {
-    font-size: 2.6rem;
+    font-size: 3.2rem;
   }
 
   .desktopButton {
@@ -89,6 +92,15 @@
 }
 
 @media (max-width: 767px) {
+  .section {
+    min-width: 100%;
+    height: 10vh;
+  }
+
+  .container {
+    height: 10vh;
+  }
+
   .logo {
     text-align: left;
   }
