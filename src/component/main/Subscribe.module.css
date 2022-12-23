@@ -7,9 +7,10 @@
 }
 
 .container h4 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
 }
 
 .container h2 {
@@ -25,9 +26,10 @@
 }
 
 .container p {
-  font-size: 1.8rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.6rem;
   margin-bottom: 4rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .container button {
@@ -67,7 +69,6 @@
 @media (min-width: 1800px) and (max-width: 4000px) {
   .container h2 {
     font-size: 4.4rem;
-    /* margin-bottom: 5rem; */
   }
 }
 
@@ -80,10 +81,6 @@
   .container h2 {
     font-size: 3.8rem;
     margin-bottom: 2.4rem;
-  }
-
-  .container p {
-    font-size: 1.8rem;
   }
 }
 
