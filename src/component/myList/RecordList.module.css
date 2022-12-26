@@ -1,5 +1,6 @@
 .container {
   margin-bottom: 8rem;
+  margin-top: 15vh;
 }
 
 .count {
@@ -18,4 +19,16 @@
 
 .noList {
   height: 24rem;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-top: 10vh;
+  }
 }

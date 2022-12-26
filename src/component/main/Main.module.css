@@ -3,6 +3,7 @@
   overflow: hidden;
   border-bottom: 2px solid #555555;
   margin-bottom: 10rem;
+  margin-top: 15vh;
 }
 
 .container {
@@ -109,6 +110,7 @@
   .section {
     height: 80rem;
     margin-bottom: 8rem;
+    margin-top: 10vh;
   }
 
   .container {
@@ -152,6 +154,7 @@
   .section {
     height: 78rem;
     margin-bottom: 6rem;
+    margin-top: 10vh;
   }
 
   .container {
