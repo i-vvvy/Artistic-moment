@@ -1,7 +1,7 @@
 .container {
   width: 88rem;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 24vh;
   margin-bottom: 10rem;
   display: flex;
 }
@@ -72,6 +72,7 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 70rem;
+    margin-top: 15vh;
   }
 
   .left {
@@ -88,7 +89,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 15vh;
     margin-bottom: 4rem;
     padding-left: 10%;
     padding-right: 10%;
