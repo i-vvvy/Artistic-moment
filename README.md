@@ -12,15 +12,16 @@
 
 ## **시연 영상**
 
-[https://www.youtube.com/watch?v=k5V-sC0n1AE](https://www.youtube.com/watch?v=k5V-sC0n1AE)
+[https://www.youtube.com/watch?v=qk-wJfcQ4hY](https://www.youtube.com/watch?v=qk-wJfcQ4hY)
 
 <br>
 <br>
 
 ## **배포 주소**
 
-### 🚨 **Notice** <br>
-
+[https://project-artistic-moment.netlify.app](https://project-artistic-moment.netlify.app)
+<br>
+<br>
 번거롭게 해드려 죄송합니다.
 <br>
 <br>
@@ -36,8 +37,6 @@ HTTP 프로토콜로 데이터를 제공받기 때문에 보안에 취약하여,
 번거로운 부탁에도 불구하고, 사이트를 열람해주셔서 진심으로 감사드립니다. 🙏
 <br>
 <br>
-
-[https://project-artistic-moment.web.app/](https://project-artistic-moment.web.app/)
 
 <br>
 <br>
