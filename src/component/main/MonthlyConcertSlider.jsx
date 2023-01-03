@@ -23,7 +23,7 @@ const MonthlyConcertSlider = ({ concert }) => {
   let date = new Date();
   let year = date.getFullYear();
   let month = date.getMonth() + 1;
-  const monthly = `${year}${month}`;
+  const monthly = `${year}0${month}`;
 
   const monthlyConcert = concert.filter(
     item => item.START_DATE.substr(0, 6) === monthly,

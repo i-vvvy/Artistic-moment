@@ -20,7 +20,7 @@ const PopularConcerSlider = ({ concert }) => {
     },
   };
 
-  let num = '6';
+  let num = '7';
   const popularConcert = concert.filter(
     item => item.END_DATE.slice(-1) === num,
   );
